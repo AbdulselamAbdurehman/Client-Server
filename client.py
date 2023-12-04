@@ -1,6 +1,6 @@
 from socket import *
 while True:
-    server_name = "your ip"
+    server_name = "server ip"
     server_port = 12000
     client_socket = socket(AF_INET, SOCK_STREAM)
     client_socket.connect((server_name, server_port))
