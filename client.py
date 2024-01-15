@@ -1,7 +1,7 @@
 from socket import *
+server_name = "server ip" #The value is just a placeholder.Put the actual server ip here.
+server_port = 12000
 while True:
-    server_name = "server ip"
-    server_port = 12000
     client_socket = socket(AF_INET, SOCK_STREAM)
     client_socket.connect((server_name, server_port))
     to_be_sent = input("write a message: ") + "\r"
